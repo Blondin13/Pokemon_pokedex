@@ -1,0 +1,46 @@
+{% extends "./../../main.html.twig" %}
+
+{% block modal %}
+	{% include "../../template/layout/_modalDeletePokemon.html.twig" %}
+{% endblock %}
+
+{% block main %}
+	<div class="div-badges"> <!-- j'ai enlevé le class="row" pour eviter le scroll mis en css-->
+	<b class="text-badges text-center">BADGES : </b>
+		{% for badge in user.badge %}
+			<div class="col-md-1 rounded mx-auto d-block">
+				<img id="imgs-badges" height="50px" src="./images/badges/{{badge.image}}" alt="">
+			</div>
+		{% endfor %}
+	</div>
+<main class="main-listPokemon">
+	<div class="container mt-5">
+		<div class="row">
+			{% for pokemon in pokemons %}
+				<div id="card-complet" class="col-md-3 card pd-auto mx-auto">
+					<div class='card-header'>
+						<img src="./images/pokeImages/{{pokemon.user}}/{{pokemon.picture}}" class="card-img-top"/>
+					</div>
+					<div class="card-body">
+						<h2 class="card-title text-center text-primary">{{pokemon.name}}</h2>
+						<p class="card-text text-center">
+							<b>Type:</b>
+							<b id="b-card">{{pokemon.type}}</b>
+						</p>
+						<p class="card-text text-center">
+							<b>Niveau:</b>
+							<b id="b-card">{{pokemon.level}}</b>
+						</p>
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<a id="a-btn" class="btn btn-primary" href="/updatePokemon/{{pokemon.id}}">Modifier</a>
+								<a id="a-btn" class="btn btn-danger" data-bs-pokeid="{{pokemon.id}}" data-bs-toggle="modal" data-bs-target="#modal">Supprimer</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</main>
+{% endblock %}

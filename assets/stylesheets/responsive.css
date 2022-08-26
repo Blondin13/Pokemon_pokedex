@@ -1,0 +1,184 @@
+/*--------------------------------------------------1540PX---------------------------------------------------------------------*/
+@media screen and (max-width: 1540px){
+   
+      
+}
+
+/*--------------------------------------------------1200PX---------------------------------------------------------------------*/
+@media screen and (max-width: 1200px){
+    /*--------NAV-BAR---------*/
+    li{
+        margin-left: 40px;
+    }
+
+    a{
+        font-size: 1rem !important;
+    }
+    
+}
+
+/*--------------------------------------------------830PX---------------------------------------------------------------------*/
+@media screen and (max-width: 830px){
+    /*-----------------LOGIN------------------*/
+    .main-connexion{
+        background-image: url(/img/bg1.png);
+        background-size: cover !important;
+        height: 1180px;
+    }
+
+    .form-connexion{
+        margin-top: 60px;
+    }
+
+    /*--------------SUBSCRIBE-----------------*/
+    .main-sinscrire{
+        background-image: url(/img/bg1.png);
+        background-size: cover !important;
+        height: 1180px;
+    }
+
+    .form-sinscrire{
+        margin-top: 40px;
+    }
+
+
+    /*-----------------------------------------*/
+    #a-btn{
+        font-size: 1rem !important;
+    }
+
+    /*---------------------------------------PAGE-AJOUT-POKEMON-----------------------------------------------*/
+    .main-ajout{
+        background-image: url(/img/balls-r.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;  
+        opacity: 0.9;  
+        height: 1180px;
+    }
+    
+
+    /*------------------------------------------FOOTER--------------------------------------------------------*/
+    footer{
+        margin-top: 1014px;
+    }
+    
+    
+}
+
+/*-----------------------------------------------430PX---------------------------------------------------------------------*/
+@media screen and (max-width: 430px){
+    /*--------NAV-BAR---------*/
+    a{
+        font-size: 1rem !important;
+    }
+
+    /*-----------------LOGIN------------------*/
+    .main-connexion{
+        height: 680px !important;
+    }
+
+    /*---------------SUBSCRIBE----------------*/
+    .main-sinscrire{
+        height: 680px !important;
+    }
+
+    /*----------PAGE-AJOUT-POKEMON------------*/
+    .main-ajout{
+        background-image: url(/img/balls-r2.jpg) !important;
+        background-repeat:initial !important;
+    }
+}
+
+/*-----------------------------------------------400PX---------------------------------------------------------------------*/
+@media screen and (max-width: 400px){
+    /*--------NAV-BAR---------*/
+    a{
+        font-size: 1rem !important;
+    }
+
+    /*-----------------LOGIN------------------*/
+    .main-connexion{
+        background-image: url(/img/bg-r.jpg);
+        background-size: cover !important;
+        height: 580px;
+    }
+
+    .form-connexion{
+        background-size: contain !important;
+        background-color: white;
+        background-position-y: top 100px !important   ;
+        width: 300px;
+        height: 280px;
+        margin-top: 80px;
+        margin-bottom: 55px;
+    }
+
+    .article-connexion input{
+        font-size: 1rem;
+        width: 85%; 
+        margin-top: 5px;
+        margin-left: 22px;
+    }
+    /*-------BOUTON----------*/
+    .article-connexion button{
+        margin-top: 0px;
+    }
+
+    /*----------------SUBSCRIBE------------------*/
+    .main-sinscrire{
+        background-image: url(/img/bg-r.jpg);
+        background-size: cover !important;
+        height: 580px;
+    }
+
+    .form-sinscrire{
+        background-size: contain !important;
+        background-color: white;
+        background-position-y: top 100px !important   ;
+        width: 300px;
+        height: 360px;
+        margin-top: 60px;
+    }
+
+    .article-sinscrire input{
+        font-size: 1rem;
+        width: 85%; 
+        margin-top: 5px;
+        margin-left: 22px;
+    }
+    /*-------BOUTON----------*/
+    .article-sinscrire button{
+        margin-top: 10px;
+    }
+
+    /*------------------HOME--------------------*/
+    .main-listPokemon{
+        background-image: none;
+        background-color:  rgb(12, 4, 75) !important;
+    }
+
+    /*------BADGES---------*/
+    #imgs-badges{
+        margin-top: 8px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .text-badges{
+        font-size: 0.8rem !important;
+        margin-top: 15px !important;
+        margin-left: 5px !important;
+    }
+
+    /*------------PAGE-AJOUT-POKEMON------------*/
+    .main-ajout{
+        background-image: url(/img/balls-r.jpg);
+        background-size: cover;
+        height: 680px !important;  
+    }
+
+    footer h2{
+        font-size: 1rem;
+    }
+
+}

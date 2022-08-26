@@ -1,0 +1,30 @@
+{% extends "../../main.html.twig" %}
+{% block main %}
+		<main class="main-sinscrire">
+    	    <article class="article-sinscrire">
+    	        <form class="form-sinscrire" id="sinscrire" action="/subscribe" method="post">
+                    <fieldset>
+                        <legend><b> Inscription </b></legend>
+
+                        <label for="name"><b> Votre nom </b></label>
+                        <input type="text" name="name" class="form-control" placeholder="Dupont" />
+
+                        <label for="firstname"><b> Votre prénom </b></label>
+                        <input type="text" name="firstname" class="form-control" placeholder="Jean" />
+
+                        <label for="mail"><b> Votre e-mail </b></label>
+                        <input type="text" name="mail" class="form-control" placeholder="Usert@exemple.com" />
+
+                        <label for="password"><b> Mot de passe </b></label>
+                        <input type="password" name="password" class="form-control" placeholder="***" />
+
+                        <button type="submit"><b id="b-valid">Valider</b></button>
+                    </fieldset>
+                </form>
+                <br/>
+                    {% for error in errors %}
+                        <span class="erreur">{{error}}</span>
+                    {% endfor %}
+            </article>
+        </main>
+{% endblock %}

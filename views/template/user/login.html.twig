@@ -1,0 +1,25 @@
+{% extends "../../main.html.twig" %}
+{% block main %}
+	<main class="main-connexion">
+        		<article class="article-connexion">
+                    <form class="form-connexion" id="connexion" method="post" action="/login">
+                        <fieldset>
+                            <legend><b class="b-connexion"> Connexion </b></legend>
+                            <br>
+                            <label for="mail"><b> Votre e-mail </b></label>
+                            <input type="mail" name="mail" class="form-control" placeholder="User@exemple.com" />
+                            <br>
+                            <label for="password"><b> Mot de passe </b></label>
+                            <input type="password" name="password" class="form-control" placeholder="******" />
+                            <br>
+                            <button type="submit"><b id="b-valid">Valider</b></button>
+                            <br>
+                        </fieldset>
+                    </form>
+                    <br>
+                        {% for error in error %}
+                            <span class="erreur">{{error}}</span>
+                        {% endfor %}
+                </article>   
+        </main>
+{% endblock %}
