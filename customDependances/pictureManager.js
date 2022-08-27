@@ -11,7 +11,7 @@ export class pictureManager {
   }
 
   static async getExtensionFile(file) { // permet de retourner l'extension d'un fichier
-    let extArray = file.mimetype.split("/");
+    let extArray = file.mimetype.split("/images/pokeImages");
     let extension = extArray[extArray.length - 1];
     return extension
   }
