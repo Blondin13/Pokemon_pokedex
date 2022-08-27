@@ -1,4 +1,4 @@
-{% extends "../../main.html.twig" %}
+{% extends "./../../main.html.twig" %}
 {% block main %}
 		<main class="main-sinscrire">
     	    <article class="article-sinscrire">
@@ -21,7 +21,6 @@
                         <button type="submit"><b id="b-valid">Valider</b></button>
                     </fieldset>
                 </form>
-                <br/>
                     {% for error in errors %}
                         <span class="erreur">{{error}}</span>
                     {% endfor %}

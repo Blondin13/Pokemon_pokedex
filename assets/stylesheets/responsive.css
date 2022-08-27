@@ -65,6 +65,52 @@
     
 }
 
+/*-----------------------------------------------630PX---------------------------------------------------------------------*/
+@media screen and (max-width: 630px){
+    /*--------NAV-BAR---------*/
+    a{
+        font-size: 1rem !important;
+    }
+
+    /*-----------------LOGIN------------------*/
+    .main-connexion{
+        background-image: url(/img/bg-r.jpg);
+        height: 880px !important;
+    }
+
+    .form-connexion{
+        background-size: contain !important;
+        background-color: white;
+        background-position-y: top 100px !important   ;
+        width: 300px;
+        height: 280px;
+        margin-top: 80px;
+        margin-bottom: 55px;
+    }
+
+    /*---------------SUBSCRIBE----------------*/
+    .main-sinscrire{
+        background-image: url(/img/bg-r.jpg);
+        height: 680px !important;
+    }
+
+    .form-sinscrire{
+        background-size: contain !important;
+        background-color: white;
+        background-position-y: top 100px !important   ;
+        width: 300px;
+        height: 280px;
+        margin-top: 80px;
+        margin-bottom: 55px;
+    }
+
+    /*----------PAGE-AJOUT-POKEMON------------*/
+    .main-ajout{
+        background-image: url(/img/balls-r2.jpg) !important;
+        background-repeat:initial !important;
+    }
+}
+
 /*-----------------------------------------------430PX---------------------------------------------------------------------*/
 @media screen and (max-width: 430px){
     /*--------NAV-BAR---------*/
@@ -180,5 +226,74 @@
     footer h2{
         font-size: 1rem;
     }
+
+}
+
+/*-----------------------------------------------360PX---------------------------------------------------------------------*/
+@media screen and (max-width: 360px){
+
+    /*-----------------LOGIN------------------*/
+    .main-connexion{
+        height: 495px !important;
+    }
+
+    .form-connexion{
+        background-size: contain !important;
+        background-color: white;
+        background-position-y: top 100px !important   ;
+        width: 300px;
+        height: 260px;
+        margin-top: 80px;
+        margin-bottom: 55px;
+    }
+
+    .article-connexion input{
+        font-size: 1rem;
+        width: 75%; 
+        margin-top: 5px;
+        margin-left: 35px;
+    }
+    /*-------BOUTON----------*/
+    .article-connexion button{
+        margin-top: 10px;
+    }
+
+    /*----------------SUBSCRIBE------------------*/
+    .main-sinscrire{
+        height: 560px !important;
+    }
+
+    .form-sinscrire{
+        background-size: contain !important;
+        background-color: white;
+        background-position-y: top 100px !important   ;
+        width: 300px;
+        height: 340px;
+        margin-top: 40px;
+    }
+
+    .article-sinscrire input{
+        font-size: 0.8rem;
+        width: 75%; 
+        margin-top: 5px;
+        margin-left: 35px;
+    }
+    /*-------BOUTON----------*/
+    .article-sinscrire button{
+        margin-top: 10px;
+    }
+
+    /*------------------HOME--------------------*/
+    .main-listPokemon{
+        background-image: none;
+        background-color:  rgb(12, 4, 75) !important;
+    }
+
+    /*------------PAGE-AJOUT-POKEMON------------*/
+    .main-ajout{
+        height: 495px !important;  
+    }
+
+
 
 }
