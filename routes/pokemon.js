@@ -12,6 +12,7 @@ pokemonRouter.get('/addPokemon', routeGuard, async (req, res) => {
     })
 })
 
+//----------------------------------AJOUT DE POKEMON----------------------------------------//
 pokemonRouter.post('/addPokemon', routeGuard, async (req, res) => {
     console.log(req.files.picture);
     let newPokemon = await PokemonController.addPokemon(req)
@@ -25,6 +26,7 @@ pokemonRouter.post('/addPokemon', routeGuard, async (req, res) => {
     }
 })
 
+//----------------------------- CHARGE L'AJOUT DE POKEMON-----------------------------------//
 pokemonRouter.get('/updatePokemon/:id', routeGuard, async (req, res) => {
     const pokemon = await PokemonController.getPokemon(req.params.id)
     res.render('template/pokemon/formPokemon.html.twig', {
@@ -47,6 +49,7 @@ pokemonRouter.post('/updatePokemon/:id', routeGuard, async (req, res) => {
     }
 })
 
+//----------------------------------SUPPRIME POKEMON----------------------------------------//
 pokemonRouter.post('/deletePokemon/:id', routeGuard, async (req, res) => {
     await PokemonController.deletePokemon(req.params.id, req.session.userId)
     res.redirect('/home')
