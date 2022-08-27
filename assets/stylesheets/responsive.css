@@ -74,7 +74,7 @@
 
     /*-----------------LOGIN------------------*/
     .main-connexion{
-        background-image: url(/img/bg-r.jpg);
+        background-image: url(/img/bg2-r.jpg);
         height: 880px !important;
     }
 
@@ -90,7 +90,7 @@
 
     /*---------------SUBSCRIBE----------------*/
     .main-sinscrire{
-        background-image: url(/img/bg-r.jpg);
+        background-image: url(/img/bg2-r.jpg);
         height: 680px !important;
     }
 
@@ -144,7 +144,7 @@
 
     /*-----------------LOGIN------------------*/
     .main-connexion{
-        background-image: url(/img/bg-r.jpg);
+        background-image: url(/img/bg2-r.jpg);
         background-size: cover !important;
         height: 580px;
     }
@@ -172,7 +172,7 @@
 
     /*----------------SUBSCRIBE------------------*/
     .main-sinscrire{
-        background-image: url(/img/bg-r.jpg);
+        background-image: url(/img/bg2-r.jpg);
         background-size: cover !important;
         height: 580px;
     }
@@ -243,8 +243,7 @@
         background-position-y: top 100px !important   ;
         width: 300px;
         height: 260px;
-        margin-top: 80px;
-        margin-bottom: 55px;
+        margin-top: 40px !important;
     }
 
     .article-connexion input{
